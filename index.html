@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan Jose Garcia | QA Engineer Portfolio</title>
+
+    <link rel="stylesheet" href="/src/styles/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="dark-theme">
+    <header>
+      <div class="header-container">
+        <div class="logo">> juan.garcia/qa_engineer</div>
+        <nav>
+          <ul>
+            <li><a href="#about">[ sobre_mi ]</a></li>
+            <li><a href="#skills">[ habilidades ]</a></li>
+            <li><a href="#projects">[ proyectos ]</a></li>
+          </ul>
+        </nav>
+        <div class="controls-container">
+          <div class="theme-switcher">
+            <input type="checkbox" id="theme-toggle" checked />
+            <label for="theme-toggle" class="slider"></label>
+          </div>
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <div class="hero-info">
+            <h1>Juan Jose Garcia Solano</h1>
+            <h2>QA Engineer</h2>
+            <p class="tagline" id="tagline-terminal"></p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/juan-jose-garcia-qa/"
+                target="_blank"
+                >[ <i class="fa-brands fa-linkedin"></i> LinkedIn ]</a
+              >
+              <a href="https://github.com/jjgs-qa" target="_blank"
+                >[ <i class="fa-brands fa-github"></i> GitHub ]</a
+              >
+              <a href="mailto:contacto.jjgs@gmail.com"
+                >[ <i class="fa-solid fa-envelope"></i> Email ]</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="/src/img/foto-perfil.jpg"
+              alt="Foto profesional de Juan Jose Garcia Solano"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <h2>> Sobre Mí</h2>
+        <p>
+          $ Soy un QA Engineer. Convierto la curiosidad en calidad. Mi trabajo
+          es "romper" el software de forma metódica, buscando los fallos
+          críticos que se esconden a simple vista.
+        </p>
+        <p>
+          $ Mi formación en <strong>TripleTen</strong> me enseñó a canalizar esa
+          energía: diseño casos de prueba exhaustivos y documento mis hallazgos
+          con precisión. Llevo esa misma mentalidad a todo lo que hago, incluso
+          analizando la estabilidad de mi propio entorno en
+          <strong>Linux</strong>. Mi objetivo: ayudar a construir un producto
+          final que sea robusto y confiable.
+        </p>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>> Habilidades Técnicas</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>[ Herramientas ]</h3>
+            <ul>
+              <li><i class="fa-solid fa-rocket"></i> Postman</li>
+              <li><i class="fa-brands fa-jira"></i> Jira</li>
+              <li><i class="fa-solid fa-file-excel"></i> Excel (Test Cases)</li>
+              <li><i class="fa-solid fa-chalkboard-user"></i> DevTools</li>
+              <li><i class="fa-brands fa-linux"></i> Linux (bspwm)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>[ Tipos de Pruebas ]</h3>
+            <ul>
+              <li><i class="fa-solid fa-server"></i> API Testing</li>
+              <li><i class="fa-solid fa-desktop"></i> Pruebas Funcionales</li>
+              <li><i class="fa-solid fa-box"></i> Pruebas de Caja Negra</li>
+              <li>
+                <i class="fa-solid fa-boxes-packing"></i> Pruebas de Regresión
+              </li>
+              <li>
+                <i class="fa-solid fa-table-cells"></i> Pruebas Cross-Browser
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>[ Metodologías ]</h3>
+            <ul>
+              <li><i class="fa-solid fa-people-group"></i> Agile</li>
+              <li><i class="fa-solid fa-arrows-spin"></i> Scrum</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>[ Certificaciones ]</h3>
+            <ul>
+              <li><i class="fa-solid fa-award"></i> QA Engineer - TripleTen</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2>> Proyectos Destacados</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img
+              src="/src/img/urban-grocers.png"
+              alt="Miniatura del proyecto de API Testing"
+            />
+            <div class="card-content">
+              <h3>project_api_backend</h3>
+              <p>
+                Análisis de robustez y lógica de negocio para servicio
+                E-commerce.
+              </p>
+              <button class="btn project-btn" data-modal-target="#modal-api">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="/src/img/urban-routes.png"
+              alt="Miniatura del proyecto Urban Routes"
+            />
+            <div class="card-content">
+              <h3>project_frontend_ui</h3>
+              <p>
+                Pruebas funcionales y de UI/UX para aplicación web de servicio
+                MaaS.
+              </p>
+              <button
+                class="btn project-btn"
+                data-modal-target="#modal-frontend"
+              >
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="/src/img/entasy-logo.jpg"" alt="Miniatura del proyecto
+            Entasy" />
+            <div class="card-content">
+              <h3>project_entasy_init</h3>
+              <p>
+                Iniciativa de QA (C#) para un videojuego en desarrollo
+                (Voluntario).
+              </p>
+              <button class="btn project-btn" data-modal-target="#modal-entasy">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>> Proceso completado. Esperando próxima iteración...</p>
+    </footer>
+
+    <div class="modal-backdrop" id="modal-api">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ project_api_backend ]</h2>
+        <p>
+          <strong>[OBJETIVO]:</strong> Validar robustez de endpoints de un
+          E-commerce.
+        </p>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>Diseño de suite de +35 casos (robustez, valores límite).</li>
+          <li>
+            Ejecución con <strong>Postman</strong> (JSON malformados, datos
+            inválidos).
+          </li>
+          <li>
+            Reporte de hallazgos en <strong>Jira</strong> (pasos de
+            reproducción).
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact">
+          <i class="fa-solid fa-bug-slash"></i>
+          <strong>[ERROR_FATAL]: 11 defectos críticos encontrados.</strong> 7 de
+          ellos provocaban <strong>FALLO_500 (Internal Server Error)</strong>.
+          Pase a producción bloqueado.
+        </p>
+
+        <img
+          src="https://via.placeholder.com/500x300"
+          alt="Captura de pantalla de Postman o Jira"
+          class="modal-image"
+        />
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="modal-frontend">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ project_frontend_ui ]</h2>
+        <p>
+          <strong>[OBJETIVO]:</strong> Asegurar funcionalidad del flujo de
+          reserva (app MaaS).
+        </p>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>Diseño de casos de prueba para flujo de reserva.</li>
+          <li>Inspección de elementos de UI con <strong>DevTools</strong>.</li>
+          <li>
+            Ejecución de pruebas de compatibilidad
+            <strong>cross-browser</strong> (Chrome/Firefox).
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact">
+          <i class="fa-solid fa-bug-slash"></i>
+          <strong>[ERROR_FUNCIONAL]: 5 defectos críticos identificados.</strong>
+          Uno permitía reservas sin un número de teléfono válido (falla de
+          lógica).
+        </p>
+
+        <img
+          src="https://via.placeholder.com/500x300"
+          alt="Captura de pantalla de un bug report en Jira"
+          class="modal-image"
+        />
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="modal-entasy">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ project_entasy_init ]</h2>
+        <p>
+          <strong>[OBJETIVO]:</strong> Implementar proceso de QA (C#) desde cero
+          (Voluntario).
+        </p>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>
+            <strong>[INITIATIVE]:</strong> Propuesta de plan de QA al líder de
+            proyecto.
+          </li>
+          <li>
+            <strong>[ADAPTABILITY]:</strong> Pivote de pruebas API a
+            <strong>testing funcional del cliente (C#)</strong>.
+          </li>
+          <li>
+            Diseño de matriz inicial de
+            <strong>+40 casos de prueba</strong> para autenticación.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-star"></i>
+          <strong>[SUCCESS]: Proceso de QA establecido.</strong> Demostración de
+          alta iniciativa y adaptabilidad técnica. Base de validación creada.
+        </p>
+
+        <img
+          src="https://via.placeholder.com/500x300"
+          alt="Captura de pantalla de la matriz de pruebas en Excel"
+          class="modal-image"
+        />
+      </div>
+    </div>
+
+    <script src="/src/utils/script.js"></script>
+  </body>
+</html>
