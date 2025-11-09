@@ -23,7 +23,7 @@
   <body class="dark-theme">
     <header>
       <div class="header-container">
-        <div class="logo">> juan.garcia/qa_engineer</div>
+        <div class="logo">> jjgs/qa_engineer</div>
         <nav>
           <ul>
             <li><a href="#about">[ sobre_mi ]</a></li>
@@ -66,7 +66,7 @@
           </div>
           <div class="hero-image">
             <img
-              src="/src/img/foto-perfil.jpg"
+              src="/src/img/foto_perfil.jpg"
               alt="Foto profesional de Juan Jose Garcia Solano"
             />
           </div>
@@ -93,6 +93,7 @@
       <section id="skills" class="container">
         <h2>> Habilidades Técnicas</h2>
         <div class="skills-grid">
+          <!-- Herramientas -->
           <div class="skill-category">
             <h3>[ Herramientas ]</h3>
             <ul>
@@ -101,13 +102,24 @@
               <li><i class="fa-solid fa-file-excel"></i> Excel (Test Cases)</li>
               <li><i class="fa-solid fa-chalkboard-user"></i> DevTools</li>
               <li><i class="fa-brands fa-linux"></i> Linux (bspwm)</li>
+              <li><i class="fa-solid fa-code"></i> Figma</li>
+              <li><i class="fa-brands fa-android"></i> Android Studio</li>
+              <li><i class="fa-solid fa-file-lines"></i> Logcat</li>
             </ul>
           </div>
+          <!-- Tipos de Pruebas -->
           <div class="skill-category">
             <h3>[ Tipos de Pruebas ]</h3>
             <ul>
               <li><i class="fa-solid fa-server"></i> API Testing</li>
               <li><i class="fa-solid fa-desktop"></i> Pruebas Funcionales</li>
+              <li>
+                <i class="fa-solid fa-object-ungroup"></i> Pruebas de UI/UX
+              </li>
+              <li>
+                <i class="fa-solid fa-mobile-screen"></i> Pruebas Móviles
+                (Android)
+              </li>
               <li><i class="fa-solid fa-box"></i> Pruebas de Caja Negra</li>
               <li>
                 <i class="fa-solid fa-boxes-packing"></i> Pruebas de Regresión
@@ -117,6 +129,7 @@
               </li>
             </ul>
           </div>
+          <!-- Metodologías -->
           <div class="skill-category">
             <h3>[ Metodologías ]</h3>
             <ul>
@@ -124,10 +137,38 @@
               <li><i class="fa-solid fa-arrows-spin"></i> Scrum</li>
             </ul>
           </div>
+          <!-- Certificaciones -->
           <div class="skill-category">
             <h3>[ Certificaciones ]</h3>
             <ul>
-              <li><i class="fa-solid fa-award"></i> QA Engineer - TripleTen</li>
+              <li>
+                <a
+                  href="/src/img/coming_soon.png"
+                  target="_blank"
+                  rel="Certificado_TripleTen"
+                >
+                  <span class="cert-title">
+                    <i class="fa-solid fa-award"></i> QA Engineer - TripleTen
+                  </span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square link-icon"
+                  ></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/src/cert/certificado_entornos_linux.pdf"
+                  target="_blank"
+                  rel="certificado de entornos linux"
+                >
+                  <span class="cert-title">
+                    <i class="fa-solid fa-award"></i> Entornos Linux - Hack4u
+                  </span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square link-icon"
+                  ></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -136,53 +177,70 @@
       <section id="projects" class="container">
         <h2>> Proyectos Destacados</h2>
         <div class="project-grid">
+          <!-- Entasy -->
           <div class="project-card">
-            <img
-              src="/src/img/urban-grocers.png"
-              alt="Miniatura del proyecto de API Testing"
-            />
+            <img src="/src/img/entasy_logo.jpg"" alt="Miniatura del proyecto
+            Entasy" />
             <div class="card-content">
-              <h3>project_api_backend</h3>
+              <h3>Entasy</h3>
               <p>
-                Análisis de robustez y lógica de negocio para servicio
-                E-commerce.
+                Pruebas de autenticación para un videojuego (C#) en desarrollo.
               </p>
-              <button class="btn project-btn" data-modal-target="#modal-api">
+              <button class="btn project-btn" data-modal-target="#modal-entasy">
                 > Ver detalles
               </button>
             </div>
           </div>
 
+          <!-- Urban.Lunch -->
           <div class="project-card">
             <img
-              src="/src/img/urban-routes.png"
-              alt="Miniatura del proyecto Urban Routes"
+              src="/src/img/urban_lunch.png"
+              alt="Miniatura del proyecto Urban.Lunch"
             />
             <div class="card-content">
-              <h3>project_frontend_ui</h3>
+              <h3>Urban.Lunch</h3>
+              <p>Pruebas funcionales de una app nativa de Android.</p>
+              <button class="btn project-btn" data-modal-target="#modal-lunch">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Urban.Grocers -->
+          <div class="project-card">
+            <img
+              src="/src/img/urban_grocers.png"
+              alt="Miniatura del proyecto de API Testing"
+            />
+            <div class="card-content">
+              <h3>Urban.Grocers</h3>
               <p>
-                Pruebas funcionales y de UI/UX para aplicación web de servicio
-                MaaS.
+                Análisis de robustez y lógica de negocio para servicio
+                E-commerce.
               </p>
               <button
                 class="btn project-btn"
-                data-modal-target="#modal-frontend"
+                data-modal-target="#modal-grocers"
               >
                 > Ver detalles
               </button>
             </div>
           </div>
 
+          <!-- Urban.Routes -->
           <div class="project-card">
-            <img src="/src/img/entasy-logo.jpg"" alt="Miniatura del proyecto
-            Entasy" />
+            <img
+              src="/src/img/urban_routes.png"
+              alt="Miniatura del proyecto Urban Routes"
+            />
             <div class="card-content">
-              <h3>project_entasy_init</h3>
+              <h3>Urban.Routes</h3>
               <p>
-                Iniciativa de QA (C#) para un videojuego en desarrollo
-                (Voluntario).
+                Pruebas funcionales y de UI/UX para aplicación web de servicio
+                MaaS.
               </p>
-              <button class="btn project-btn" data-modal-target="#modal-entasy">
+              <button class="btn project-btn" data-modal-target="#modal-routes">
                 > Ver detalles
               </button>
             </div>
@@ -192,13 +250,88 @@
     </main>
 
     <footer>
-      <p>> Proceso completado. Esperando próxima iteración...</p>
+      <p>> Proceso completado. Esperando próxima interación...</p>
     </footer>
 
-    <div class="modal-backdrop" id="modal-api">
+    <div class="modal-backdrop" id="modal-entasy">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
-        <h2>[ project_api_backend ]</h2>
+        <h2>[ Entasy ]</h2>
+        <p>
+          <strong>[OBJETIVO]:</strong> Implementar el proceso de QA y validar
+          los flujos de autenticación desde cero.
+        </p>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>Diseño de casos de prueba para los flujos de autenticación.</li>
+          <li>
+            Ejecución de pruebas funcionales para Login, Registro, Cambiar
+            contraseña y Recuperación de contraseña.
+          </li>
+          <li>
+            Verificación de la lógica de negocio (ej. 'contraseñas no
+            coinciden', 'email ya existe', 'campo requerido', etc...).
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-star"></i>
+          <strong>[SUCCESS]: Flujos de autenticación validados.</strong> Se
+          estableció el primer proceso formal de QA y se validó la base de
+          seguridad del proyecto.
+        </p>
+
+        <img
+          src="src/img/coming_soon.png"
+          alt="Captura de pantalla de la matriz de pruebas en Excel"
+          class="modal-image"
+        />
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="modal-lunch">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ Urban.Lunch ]</h2>
+        <p>
+          <strong>[OBJETIVO]:</strong> Validar el flujo de usuario principal de
+          la app nativa.
+        </p>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>Diseño de una checklist (Excel) basada en el flujo de la app.</li>
+          <li>
+            Ejecución de pruebas funcionales cubriendo la selección de
+            platillos, la cesta y el vaciado de la cesta.
+          </li>
+          <li>
+            Verificación del sistema de notificaciones push de la aplicación.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-star"></i>
+          <strong>[SUCCESS]: Flujo de usuario validado.</strong> Se confirmó que
+          la lógica de negocio (ej. 'Añadir/Vaciar Cesta') funcionaba según los
+          requisitos.
+        </p>
+
+        <img
+          src="/src/img/urban_lunch_jira.png"
+          alt="Captura de pantalla de Jira"
+          class="modal-image"
+        />
+      </div>
+    </div>
+
+    <div class="modal-backdrop" id="modal-grocers">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ Urban.Grocers ]</h2>
         <p>
           <strong>[OBJETIVO]:</strong> Validar robustez de endpoints de un
           E-commerce.
@@ -226,17 +359,17 @@
         </p>
 
         <img
-          src="https://via.placeholder.com/500x300"
+          src="/src/img/urban_grocers_jira.png"
           alt="Captura de pantalla de Postman o Jira"
           class="modal-image"
         />
       </div>
     </div>
 
-    <div class="modal-backdrop" id="modal-frontend">
+    <div class="modal-backdrop" id="modal-routes">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
-        <h2>[ project_frontend_ui ]</h2>
+        <h2>[ Urban-routes ]</h2>
         <p>
           <strong>[OBJETIVO]:</strong> Asegurar funcionalidad del flujo de
           reserva (app MaaS).
@@ -261,48 +394,8 @@
         </p>
 
         <img
-          src="https://via.placeholder.com/500x300"
+          src="/src/img/urban_routes_jira.png"
           alt="Captura de pantalla de un bug report en Jira"
-          class="modal-image"
-        />
-      </div>
-    </div>
-
-    <div class="modal-backdrop" id="modal-entasy">
-      <div class="modal-content">
-        <span class="modal-close">[X]</span>
-        <h2>[ project_entasy_init ]</h2>
-        <p>
-          <strong>[OBJETIVO]:</strong> Implementar proceso de QA (C#) desde cero
-          (Voluntario).
-        </p>
-
-        <h3>[PROCESO_QA]</h3>
-        <ul>
-          <li>
-            <strong>[INITIATIVE]:</strong> Propuesta de plan de QA al líder de
-            proyecto.
-          </li>
-          <li>
-            <strong>[ADAPTABILITY]:</strong> Pivote de pruebas API a
-            <strong>testing funcional del cliente (C#)</strong>.
-          </li>
-          <li>
-            Diseño de matriz inicial de
-            <strong>+40 casos de prueba</strong> para autenticación.
-          </li>
-        </ul>
-
-        <h3>[IMPACTO_CRITICO]</h3>
-        <p class="impact impact-success">
-          <i class="fa-solid fa-star"></i>
-          <strong>[SUCCESS]: Proceso de QA establecido.</strong> Demostración de
-          alta iniciativa y adaptabilidad técnica. Base de validación creada.
-        </p>
-
-        <img
-          src="https://via.placeholder.com/500x300"
-          alt="Captura de pantalla de la matriz de pruebas en Excel"
           class="modal-image"
         />
       </div>
