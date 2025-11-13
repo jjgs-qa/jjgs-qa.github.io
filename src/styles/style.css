@@ -501,7 +501,6 @@ body.dark-theme .project-card:hover img {
     filter: none;
 }
 
-
 .card-content {
     padding: 1.5rem;
     flex-grow: 1;
@@ -815,7 +814,6 @@ footer {
         background-color: transparent;
         font-size: 1.4rem;
         /* El ícono por defecto (Modo Oscuro) es la LUNA */
-
         content: "\f186";
         color: #3498db;
     }
@@ -839,10 +837,32 @@ footer {
         font-size: 2rem;
     }
 
+    .modal-close {
+        font-size: 1.6rem;
+    }
+
     .modal-content {
         width: 95%;
         margin: 10% auto;
         padding: 1.5rem;
+    }
+
+    .modal-content h2 {
+        margin-top: 0;
+        font-size: 1.6em;
+    }
+
+    .modal-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal-content ul li {
+        padding-left: 1rem;
+    }
+
+    .impact {
+        font-size: 1rem;
+        padding: 0.8rem;
     }
 
     .skill-category h3 {

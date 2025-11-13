@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juan Jose Garcia | QA Engineer Portfolio</title>
+    <title>jjgs/qa_engineer</title>
 
+    <link
+      rel="icon"
+      id="favicon"
+      type="image/png"
+      href="/src/img/logo_qa.webp"
+    />
     <link rel="stylesheet" href="/src/styles/style.css" />
 
     <link
@@ -66,7 +72,7 @@
           </div>
           <div class="hero-image">
             <img
-              src="/src/img/foto_perfil.jpg"
+              src="/src/img/foto_perfil.webp"
               alt="Foto profesional de Juan Jose Garcia Solano"
             />
           </div>
@@ -143,7 +149,7 @@
             <ul>
               <li>
                 <a
-                  href="/src/img/coming_soon.png"
+                  href="/src/img/coming_soon.webp"
                   target="_blank"
                   rel="Certificado_TripleTen"
                 >
@@ -179,12 +185,16 @@
         <div class="project-grid">
           <!-- Entasy -->
           <div class="project-card">
-            <img src="/src/img/entasy_logo.jpg"" alt="Miniatura del proyecto
-            Entasy" />
+            <img
+              src="/src/img/entasy_logo.webp"
+              alt="Miniatura del proyecto
+            Entasy"
+            />
             <div class="card-content">
               <h3>Entasy</h3>
               <p>
-                Pruebas de autenticación para un videojuego (C#) en desarrollo.
+                Auditoría de seguridad y funcionalidad para los flujos de
+                autenticación de un videojuego (C#).
               </p>
               <button class="btn project-btn" data-modal-target="#modal-entasy">
                 > Ver detalles
@@ -195,12 +205,14 @@
           <!-- Urban.Lunch -->
           <div class="project-card">
             <img
-              src="/src/img/urban_lunch.png"
+              src="/src/img/urban_lunch.webp"
               alt="Miniatura del proyecto Urban.Lunch"
             />
             <div class="card-content">
               <h3>Urban.Lunch</h3>
-              <p>Pruebas funcionales de una app nativa de Android.</p>
+              <p>
+                Pruebas funcionales de una app de delivery nativa de Android.
+              </p>
               <button class="btn project-btn" data-modal-target="#modal-lunch">
                 > Ver detalles
               </button>
@@ -210,7 +222,7 @@
           <!-- Urban.Grocers -->
           <div class="project-card">
             <img
-              src="/src/img/urban_grocers.png"
+              src="/src/img/urban_grocers.webp"
               alt="Miniatura del proyecto de API Testing"
             />
             <div class="card-content">
@@ -231,7 +243,7 @@
           <!-- Urban.Routes -->
           <div class="project-card">
             <img
-              src="/src/img/urban_routes.png"
+              src="/src/img/urban_routes.webp"
               alt="Miniatura del proyecto Urban Routes"
             />
             <div class="card-content">
@@ -258,33 +270,42 @@
         <span class="modal-close">[X]</span>
         <h2>[ Entasy ]</h2>
         <p>
-          <strong>[OBJETIVO]:</strong> Implementar el proceso de QA y validar
-          los flujos de autenticación desde cero.
+          <strong>[OBJETIVO]:</strong> Realizar una auditoría de funcionalidad y
+          seguridad de todo el ciclo de vida de autenticación del proyecto (C#)
+          desde cero.
         </p>
 
         <h3>[PROCESO_QA]</h3>
         <ul>
-          <li>Diseño de casos de prueba para los flujos de autenticación.</li>
           <li>
-            Ejecución de pruebas funcionales para Login, Registro, Cambiar
-            contraseña y Recuperación de contraseña.
+            Diseño de casos de prueba detallados (Excel) para todos los flujos
+            de cuenta.
           </li>
           <li>
-            Verificación de la lógica de negocio (ej. 'contraseñas no
-            coinciden', 'email ya existe', 'campo requerido', etc...).
+            Ejecución de pruebas funcionales cubriendo
+            <strong
+              >Registro, Login, Cambio de Contraseña y Recuperación de
+              Contraseña</strong
+            >.
+          </li>
+          <li>
+            Verificación sistemática de todos los escenarios de fallo:
+            contraseñas no coincidentes, usuarios duplicados, campos vacíos y
+            formatos inválidos.
           </li>
         </ul>
 
         <h3>[IMPACTO_CRITICO]</h3>
         <p class="impact impact-success">
           <i class="fa-solid fa-star"></i>
-          <strong>[SUCCESS]: Flujos de autenticación validados.</strong> Se
-          estableció el primer proceso formal de QA y se validó la base de
-          seguridad del proyecto.
+          <strong>[SUCCESS]: Base de seguridad validada.</strong> Se confirmó
+          que todos los flujos de autenticación rechazan correctamente las
+          entradas inválidas, protegiendo al sistema contra la creación de
+          cuentas duplicadas o el acceso incorrecto.
         </p>
 
         <img
-          src="src/img/coming_soon.png"
+          src="src/img/entasy_jira.webp"
           alt="Captura de pantalla de la matriz de pruebas en Excel"
           class="modal-image"
         />
@@ -297,7 +318,7 @@
         <h2>[ Urban.Lunch ]</h2>
         <p>
           <strong>[OBJETIVO]:</strong> Validar el flujo de usuario principal de
-          la app nativa.
+          la una app delivery nativa de Android.
         </p>
 
         <h3>[PROCESO_QA]</h3>
@@ -321,7 +342,7 @@
         </p>
 
         <img
-          src="/src/img/urban_lunch_jira.png"
+          src="/src/img/urban_lunch_jira.webp"
           alt="Captura de pantalla de Jira"
           class="modal-image"
         />
@@ -359,7 +380,7 @@
         </p>
 
         <img
-          src="/src/img/urban_grocers_jira.png"
+          src="/src/img/urban_grocers_jira.webp"
           alt="Captura de pantalla de Postman o Jira"
           class="modal-image"
         />
@@ -394,7 +415,7 @@
         </p>
 
         <img
-          src="/src/img/urban_routes_jira.png"
+          src="/src/img/urban_routes_jira.webp"
           alt="Captura de pantalla de un bug report en Jira"
           class="modal-image"
         />
