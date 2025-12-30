@@ -9,21 +9,18 @@
       rel="icon"
       id="favicon"
       type="image/png"
-      href="/src/img/logo_qa.webp"
-    />
+      href="/src/img/logo_qa.webp" />
     <link rel="stylesheet" href="/src/styles/style.css" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
   </head>
 
   <body class="dark-theme">
@@ -73,8 +70,7 @@
           <div class="hero-image">
             <img
               src="/src/img/foto_perfil.webp"
-              alt="Foto profesional de Juan Jose Garcia Solano"
-            />
+              alt="Foto profesional de Juan Jose Garcia Solano" />
           </div>
         </div>
       </section>
@@ -105,9 +101,11 @@
             <ul>
               <li><i class="fa-solid fa-rocket"></i> Postman</li>
               <li><i class="fa-brands fa-jira"></i> Jira</li>
+              <li><i class="fa-brands fa-trello"></i> Trello</li>
               <li><i class="fa-solid fa-file-excel"></i> Excel (Test Cases)</li>
               <li><i class="fa-solid fa-chalkboard-user"></i> DevTools</li>
-              <li><i class="fa-brands fa-linux"></i> Linux (bspwm)</li>
+              <li><i class="fa-brands fa-fedora"></i> Linux (Fedora KDE)</li>
+              <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
               <li><i class="fa-solid fa-code"></i> Figma</li>
               <li><i class="fa-brands fa-android"></i> Android Studio</li>
               <li><i class="fa-solid fa-file-lines"></i> Logcat</li>
@@ -133,6 +131,10 @@
               <li>
                 <i class="fa-solid fa-table-cells"></i> Pruebas Cross-Browser
               </li>
+              <li><i class="fa-solid fa-gamepad"></i> Game Testing</li>
+              <li>
+                <i class="fa-solid fa-gauge-high"></i> Performance (FPS/Load)
+              </li>
             </ul>
           </div>
           <!-- Metodologías -->
@@ -151,28 +153,24 @@
                 <a
                   href="/src/img/coming_soon.webp"
                   target="_blank"
-                  rel="Certificado_TripleTen"
-                >
+                  rel="Certificado_TripleTen">
                   <span class="cert-title">
                     <i class="fa-solid fa-award"></i> QA Engineer - TripleTen
                   </span>
                   <i
-                    class="fa-solid fa-arrow-up-right-from-square link-icon"
-                  ></i>
+                    class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
                 </a>
               </li>
               <li>
                 <a
                   href="/src/cert/certificado_entornos_linux.pdf"
                   target="_blank"
-                  rel="certificado de entornos linux"
-                >
+                  rel="certificado de entornos linux">
                   <span class="cert-title">
                     <i class="fa-solid fa-award"></i> Entornos Linux - Hack4u
                   </span>
                   <i
-                    class="fa-solid fa-arrow-up-right-from-square link-icon"
-                  ></i>
+                    class="fa-solid fa-arrow-up-right-from-square link-icon"></i>
                 </a>
               </li>
             </ul>
@@ -183,13 +181,31 @@
       <section id="projects" class="container">
         <h2>> Proyectos Destacados</h2>
         <div class="project-grid">
+          <!-- RealmWalker -->
+          <div class="project-card">
+            <img
+              src="/src/img/realmwalker_logo.webp"
+              alt="Miniatura del proyecto RealmWalker" />
+            <div class="card-content">
+              <h3>RealmWalker</h3>
+              <p>
+                QA testing para Alpha Build: Reporte de bugs críticos
+                (Blockers), análisis de performance y feedback de UX.
+              </p>
+              <button
+                class="btn project-btn"
+                data-modal-target="#modal-realmwalker">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
           <!-- Entasy -->
           <div class="project-card">
             <img
               src="/src/img/entasy_logo.webp"
               alt="Miniatura del proyecto
-            Entasy"
-            />
+            Entasy" />
             <div class="card-content">
               <h3>Entasy</h3>
               <p>
@@ -206,8 +222,7 @@
           <div class="project-card">
             <img
               src="/src/img/urban_lunch.webp"
-              alt="Miniatura del proyecto Urban.Lunch"
-            />
+              alt="Miniatura del proyecto Urban.Lunch" />
             <div class="card-content">
               <h3>Urban.Lunch</h3>
               <p>
@@ -223,8 +238,7 @@
           <div class="project-card">
             <img
               src="/src/img/urban_grocers.webp"
-              alt="Miniatura del proyecto de API Testing"
-            />
+              alt="Miniatura del proyecto de API Testing" />
             <div class="card-content">
               <h3>Urban.Grocers</h3>
               <p>
@@ -233,8 +247,7 @@
               </p>
               <button
                 class="btn project-btn"
-                data-modal-target="#modal-grocers"
-              >
+                data-modal-target="#modal-grocers">
                 > Ver detalles
               </button>
             </div>
@@ -244,8 +257,7 @@
           <div class="project-card">
             <img
               src="/src/img/urban_routes.webp"
-              alt="Miniatura del proyecto Urban Routes"
-            />
+              alt="Miniatura del proyecto Urban Routes" />
             <div class="card-content">
               <h3>Urban.Routes</h3>
               <p>
@@ -264,6 +276,69 @@
     <footer>
       <p>> Proceso completado. Esperando próxima interación...</p>
     </footer>
+
+    <div class="modal-backdrop" id="modal-realmwalker">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ RealmWalker ]</h2>
+
+        <p>
+          <strong>[OBJETIVO]:</strong> Ejecutar pruebas exploratorias
+          (Playtesting) bajo invitación directa del estudio, entregando un
+          reporte técnico de bugs y feedback de jugabilidad en entorno Windows
+          para apoyar la fase de desarrollo.
+        </p>
+
+        <h3>[ DOCUMENTACIÓN ]</h3>
+        <p>Selecciona el idioma para ver el reporte detallado:</p>
+
+        <div class="pdf-buttons-container">
+          <a
+            href="/src/docs/RealmWalkeR_feedback_es.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-regular fa-file-pdf"></i> [ REPORTE_ES ]
+          </a>
+
+          <a
+            href="/src/docs/RealmWalkeR_feedback_en.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-regular fa-file-pdf"></i> [ REPORT_EN ]
+          </a>
+        </div>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>
+            Detección de <strong>Bug Crítico (Blocker)</strong>: "Pantalla
+            negra" al confirmar cambios en Configuración.
+          </li>
+          <li>
+            Análisis de Performance: Identificación de caída severa de
+            <strong>50 FPS a 10 FPS</strong> en la "Zona Nevada".
+          </li>
+          <li>
+            Pruebas de Combate: Reporte de desincronización (Input Lag) en
+            ataques al rotar la cámara 180°.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_TECNICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-bug"></i>
+          <strong>[RESULTADO]: 4 Defectos Reportados.</strong> Se entregó un
+          reporte priorizado (Severity: Critical/Major) documentando fallos que
+          bloqueaban el juego y enemigos fuera del mapa (OOB), permitiendo a los
+          devs corregir la estabilidad antes del lanzamiento.
+        </p>
+
+        <img
+          src="/src/img/coming_soon.webp"
+          alt="Evidencia de pruebas RealmWalker"
+          class="modal-image" />
+      </div>
+    </div>
 
     <div class="modal-backdrop" id="modal-entasy">
       <div class="modal-content">
@@ -307,8 +382,7 @@
         <img
           src="src/img/entasy_jira.webp"
           alt="Captura de pantalla de la matriz de pruebas en Excel"
-          class="modal-image"
-        />
+          class="modal-image" />
       </div>
     </div>
 
@@ -344,8 +418,7 @@
         <img
           src="/src/img/urban_lunch_jira.webp"
           alt="Captura de pantalla de Jira"
-          class="modal-image"
-        />
+          class="modal-image" />
       </div>
     </div>
 
@@ -382,8 +455,7 @@
         <img
           src="/src/img/urban_grocers_jira.webp"
           alt="Captura de pantalla de Postman o Jira"
-          class="modal-image"
-        />
+          class="modal-image" />
       </div>
     </div>
 
@@ -417,8 +489,7 @@
         <img
           src="/src/img/urban_routes_jira.webp"
           alt="Captura de pantalla de un bug report en Jira"
-          class="modal-image"
-        />
+          class="modal-image" />
       </div>
     </div>
 
