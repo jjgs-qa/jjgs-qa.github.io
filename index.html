@@ -102,10 +102,11 @@
               <li><i class="fa-solid fa-rocket"></i> Postman</li>
               <li><i class="fa-brands fa-jira"></i> Jira</li>
               <li><i class="fa-brands fa-trello"></i> Trello</li>
-              <li><i class="fa-solid fa-file-excel"></i> Excel (Test Cases)</li>
-              <li><i class="fa-solid fa-chalkboard-user"></i> DevTools</li>
+              <li><i class="fa-solid fa-database"></i> PostgreSQL / DBeaver</li>
               <li><i class="fa-brands fa-fedora"></i> Linux (Fedora KDE)</li>
               <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
+              <li><i class="fa-solid fa-file-excel"></i> Excel (Test Cases)</li>
+              <li><i class="fa-solid fa-chalkboard-user"></i> DevTools</li>
               <li><i class="fa-solid fa-code"></i> Figma</li>
               <li><i class="fa-brands fa-android"></i> Android Studio</li>
               <li><i class="fa-solid fa-file-lines"></i> Logcat</li>
@@ -115,7 +116,18 @@
           <div class="skill-category">
             <h3>[ Tipos de Pruebas ]</h3>
             <ul>
-              <li><i class="fa-solid fa-server"></i> API Testing</li>
+              <li><i class="fa-solid fa-server"></i> API & Backend Testing</li>
+              <li>
+                <i class="fa-solid fa-table-list"></i> Database Testing (SQL)
+              </li>
+              <li>
+                <i class="fa-solid fa-magnifying-glass-chart"></i> Log Analysis
+                / Data Mining
+              </li>
+              <li><i class="fa-solid fa-gamepad"></i> Game Testing</li>
+              <li>
+                <i class="fa-solid fa-gauge-high"></i> Performance (FPS/Load)
+              </li>
               <li><i class="fa-solid fa-desktop"></i> Pruebas Funcionales</li>
               <li>
                 <i class="fa-solid fa-object-ungroup"></i> Pruebas de UI/UX
@@ -127,13 +139,6 @@
               <li><i class="fa-solid fa-box"></i> Pruebas de Caja Negra</li>
               <li>
                 <i class="fa-solid fa-boxes-packing"></i> Pruebas de Regresión
-              </li>
-              <li>
-                <i class="fa-solid fa-table-cells"></i> Pruebas Cross-Browser
-              </li>
-              <li><i class="fa-solid fa-gamepad"></i> Game Testing</li>
-              <li>
-                <i class="fa-solid fa-gauge-high"></i> Performance (FPS/Load)
               </li>
             </ul>
           </div>
@@ -181,6 +186,24 @@
       <section id="projects" class="container">
         <h2>> Proyectos Destacados</h2>
         <div class="project-grid">
+          <!-- SQL & Logs Analysis -->
+          <div class="project-card">
+            <img
+              src="/src/img/logro_backend.webp"
+              alt="Análisis de datos SQL y Logs" />
+            <div class="card-content">
+              <h3>Data Analysis & Logs</h3>
+              <p>
+                Auditoría de base de datos SQL y análisis forense de logs en
+                servidor Linux para validar métricas operativas.
+              </p>
+              <button
+                class="btn project-btn"
+                data-modal-target="#modal-sprint-7">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
           <!-- RealmWalker -->
           <div class="project-card">
             <img
@@ -276,7 +299,52 @@
     <footer>
       <p>> Proceso completado. Esperando próxima interación...</p>
     </footer>
+    <!-- SQL & Logs Analysis -->
+    <div class="modal-backdrop" id="modal-sprint-7">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ SQL_&_Logs_Analysis ]</h2>
 
+        <p>
+          <strong>[OBJETIVO]:</strong> Validar la integridad de los datos de la
+          flota de taxis mediante consultas SQL complejas e identificar patrones
+          de error en el servidor analizando logs en entorno Linux.
+        </p>
+
+        <h3>[PROCESO_TECNICO]</h3>
+        <ul>
+          <li>
+            <strong>Consultas SQL Avanzadas:</strong> Uso de JOINs, agregaciones
+            (COUNT, GROUP BY) y condicionales (CASE) para auditar inventario y
+            viajes.
+          </li>
+          <li>
+            <strong>Análisis de Logs (Bash):</strong> Filtrado de logs de
+            servidor con comandos (grep, pipes) para aislar errores HTTP 400/500
+            críticos.
+          </li>
+          <li>
+            <strong>Validación de Lógica:</strong> Correlación de datos
+            meteorológicos vs registros de viajes para verificar tarifas
+            dinámicas.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_CRITICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-database"></i>
+          <strong>[RESULTADO]:</strong> Se detectaron inconsistencias en la
+          disponibilidad de la flota y se generaron reportes precisos de errores
+          del servidor, permitiendo corregir fallos en el cálculo de tarifas.
+        </p>
+
+        <img
+          src="/src/img/logs_evidencia_terminal.webp"
+          alt="Evidencia de consultas SQL"
+          class="modal-image" />
+      </div>
+    </div>
+    <!-- RealmWalker -->
     <div class="modal-backdrop" id="modal-realmwalker">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
@@ -339,7 +407,7 @@
           class="modal-image" />
       </div>
     </div>
-
+    <!-- Entasy -->
     <div class="modal-backdrop" id="modal-entasy">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
@@ -385,7 +453,7 @@
           class="modal-image" />
       </div>
     </div>
-
+    <!-- Urban.Lunch -->
     <div class="modal-backdrop" id="modal-lunch">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
@@ -421,7 +489,7 @@
           class="modal-image" />
       </div>
     </div>
-
+    <!-- Urban.Grocers -->
     <div class="modal-backdrop" id="modal-grocers">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
@@ -458,7 +526,7 @@
           class="modal-image" />
       </div>
     </div>
-
+    <!-- Urban.Routes -->
     <div class="modal-backdrop" id="modal-routes">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
