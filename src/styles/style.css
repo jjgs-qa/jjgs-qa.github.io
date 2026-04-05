@@ -44,7 +44,9 @@ body {
   color: var(--text-color);
   font-family: var(--font-primary);
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* JJG: - Scan lines solo en modo oscuro */
@@ -120,7 +122,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 body.light-theme header {
@@ -328,7 +332,9 @@ body.light-theme #hero {
   height: 250px;
   border-radius: 50%;
   border: 3px solid var(--border-color);
-  transition: filter 0.3s ease, border-color 0.3s ease;
+  transition:
+    filter 0.3s ease,
+    border-color 0.3s ease;
 }
 
 body.dark-theme .hero-image img {
@@ -379,7 +385,9 @@ body.light-theme .social-links a {
   background: var(--card-bg);
   padding: 1.5rem;
   border: 1px solid var(--border-color);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 body.light-theme .skill-category {
@@ -437,7 +445,9 @@ body.light-theme .skill-category {
 .skill-category li a .link-icon {
   font-size: 0.8rem;
   color: #888;
-  transition: color 0.3s ease, opacity 0.3s ease;
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease;
 }
 
 body.dark-theme .skill-category li a:hover,
@@ -464,7 +474,10 @@ body.light-theme .skill-category li a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 body.light-theme .project-card {
@@ -866,11 +879,11 @@ footer {
 
   .modal-content h2 {
     margin-top: 0;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .modal-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .modal-content ul li {

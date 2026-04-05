@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -120,6 +120,7 @@
               <li>
                 <i class="fa-solid fa-table-list"></i> Database Testing (SQL)
               </li>
+              <li><i class="fa-solid fa-fire"></i> Smoke Testing</li>
               <li>
                 <i class="fa-solid fa-magnifying-glass-chart"></i> Log Analysis
                 / Data Mining
@@ -186,6 +187,44 @@
       <section id="projects" class="container">
         <h2>> Proyectos Destacados</h2>
         <div class="project-grid">
+          <!-- KyushuMC -->
+          <div class="project-card">
+            <img src="/src/img/kyushumc_logo.webp" alt="Smoke Test KyushuMC" />
+            <div class="card-content">
+              <h3>KyushuMC</h3>
+              <p>
+                Smoke Test en servidor Minecraft Paper 1.21.8: detección de
+                vulnerabilidades críticas de permisos, exposición de información
+                sensible y fallos de configuración en Lobby.
+              </p>
+              <button
+                class="btn project-btn"
+                data-modal-target="#modal-kyushumc">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
+          <!-- Wavebreaker -->
+          <div class="project-card">
+            <img
+              src="/src/img/wavebreaker_logo_no_oficial.webp"
+              alt="Planificación técnica de Wavebreaker" />
+            <div class="card-content">
+              <h3>Wavebreaker</h3>
+              <p>
+                Diseño de manual de trello con flujos de trabajo, hexadecimal
+                visual y protocolos de calificación de severidad para un RPG
+                desarrollado en Unreal Engine 5.7.
+              </p>
+              <button
+                class="btn project-btn"
+                data-modal-target="#modal-wavebreaker">
+                > Ver detalles
+              </button>
+            </div>
+          </div>
+
           <!-- SQL & Logs Analysis -->
           <div class="project-card">
             <img
@@ -204,6 +243,7 @@
               </button>
             </div>
           </div>
+
           <!-- RealmWalker -->
           <div class="project-card">
             <img
@@ -299,6 +339,125 @@
     <footer>
       <p>> Proceso completado. Esperando próxima interación...</p>
     </footer>
+
+    <div class="modal-backdrop" id="modal-kyushumc">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ KyushuMC ]</h2>
+
+        <p>
+          <strong>[OBJETIVO]:</strong> Ejecutar un Smoke Test sobre el entorno
+          de Lobby activo del servidor, verificando estabilidad básica,
+          configuración de permisos y exposición de información sensible en una
+          cuenta de jugador regular sin rango asignado.
+        </p>
+
+        <h3>[ DOCUMENTACIÓN ]</h3>
+        <p>Reporte técnico completo con los hallazgos documentados:</p>
+
+        <div class="pdf-buttons-container">
+          <a
+            href="https://jjgs-qa.github.io/src/docs/KyushuMC_SmokeTest_BugReport.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-solid fa-file-pdf"></i> [ REPORTE_DETALLADO ]
+          </a>
+        </div>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>
+            <strong>Pruebas de Entorno:</strong> Verificación de daño por caída
+            y ahogamiento en Lobby los jugadores pueden morir dentro del lobby,
+            lo cual no es el comportamiento esperado para un área segura
+          </li>
+          <li>
+            <strong>Auditoría de Permisos:</strong> Ejecución de comandos
+            administrativos (WorldEdit, WorldGuard) desde cuenta sin rango para
+            detectar escalación de privilegios.
+          </li>
+          <li>
+            <strong>Exposición de Información:</strong> Identificación de
+            comandos que revelan versión exacta del servidor, plugins instalados
+            y arquitectura BungeeCord a cualquier jugador.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_TECNICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-bug"></i>
+          <strong>[RESULTADO]: 5 Defectos Reportados</strong> (2 Críticos, 2
+          Mayores, 1 Menor). Se detectaron vulnerabilidades de permisos que
+          permitían a jugadores sin rango ejecutar herramientas de
+          administración de WorldEdit y WorldGuard, además de acceder a
+          información sensible de la infraestructura del servidor.
+        </p>
+
+        <img
+          src="/src/img/kyushumc_smoketest.webp"
+          alt="Evidencia Smoke Test KyushuMC"
+          class="modal-image" />
+      </div>
+    </div>
+    <!-- Wavebreaker -->
+    <div class="modal-backdrop" id="modal-wavebreaker">
+      <div class="modal-content">
+        <span class="modal-close">[X]</span>
+        <h2>[ Wavebreaker ]</h2>
+
+        <p>
+          <strong>[OBJETIVO]:</strong> Establecer un flujo de trabajo
+          estandarizado, comunicación visual clara y protocolos de Quality
+          Assurance para coordinar al equipo de desarrollo.
+        </p>
+
+        <h3>[ DOCUMENTACIÓN ]</h3>
+        <p>Consulta el manual técnico y el protocolo de gestión de errores:</p>
+
+        <div class="pdf-buttons-container">
+          <a
+            href="https://jjgs-qa.github.io/src/docs/Wavebreaker_Manual_Trello.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-solid fa-file-pdf"></i> [ MANUAL_TRELLO ]
+          </a>
+        </div>
+
+        <h3>[PROCESO_QA]</h3>
+        <ul>
+          <li>
+            <strong>Hexadecimal Visual:</strong> Implementación de códigos
+            hexadecimales para identificar instantáneamente 6 departamentos y 3
+            categorías de activos (Assets).
+          </li>
+
+          <li>
+            <strong>Ciclo de Vida de Tareas:</strong> Definición de un flujo
+            obligatorio de verificación (Review / QA) antes de finalizar
+            cualquier entrega.
+          </li>
+          <li>
+            <strong>Clasificación de Severidad:</strong> Sistema de priorización
+            basado en 4 niveles de severidad (Critical a Low) con tiempos de
+            respuesta (SLA) definidos.
+          </li>
+        </ul>
+
+        <h3>[IMPACTO_TECNICO]</h3>
+        <p class="impact impact-success">
+          <i class="fa-solid fa-check-double"></i>
+          <strong>[RESULTADO]:</strong> Documentación técnica aprobada para
+          implementación. Se logró consolidar una estructura de 14 listas en
+          Trello que el control de calidad y la organización de activos críticos
+          para el Demo.
+        </p>
+
+        <img
+          src="/src/img/wavebreaker_trello.webp"
+          alt="Evidencia de flujo de trabajo Wavebreaker"
+          class="modal-image" />
+      </div>
+    </div>
     <!-- SQL & Logs Analysis -->
     <div class="modal-backdrop" id="modal-sprint-7">
       <div class="modal-content">
@@ -311,7 +470,7 @@
           de error en el servidor analizando logs en entorno Linux.
         </p>
 
-        <h3>[PROCESO_TECNICO]</h3>
+        <h3>[PROCESO_QA]</h3>
         <ul>
           <li>
             <strong>Consultas SQL Avanzadas:</strong> Uso de JOINs, agregaciones
@@ -417,6 +576,24 @@
           seguridad de todo el ciclo de vida de autenticación del proyecto (C#)
           desde cero.
         </p>
+        <h3>[ DOCUMENTACIÓN ]</h3>
+        <p>Selecciona el idioma para ver el reporte detallado:</p>
+
+        <div class="pdf-buttons-container">
+          <a
+            href="/src/docs/test_cases_english_es.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-regular fa-file-pdf"></i> [ REPORTE_ES ]
+          </a>
+
+          <a
+            href="/src/docs/test_cases_english_en.pdf"
+            target="_blank"
+            class="btn pdf-btn">
+            <i class="fa-regular fa-file-pdf"></i> [ REPORT_EN ]
+          </a>
+        </div>
 
         <h3>[PROCESO_QA]</h3>
         <ul>
@@ -530,7 +707,7 @@
     <div class="modal-backdrop" id="modal-routes">
       <div class="modal-content">
         <span class="modal-close">[X]</span>
-        <h2>[ Urban-routes ]</h2>
+        <h2>[ Urban-Routes ]</h2>
         <p>
           <strong>[OBJETIVO]:</strong> Asegurar funcionalidad del flujo de
           reserva (app MaaS).
