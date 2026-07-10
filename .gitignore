@@ -8,6 +8,7 @@ node_modules/
 
 # Archivos de editor
 .vscode/
+.agents/
 *.swp
 *.swo
 *~
