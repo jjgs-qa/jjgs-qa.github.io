@@ -1,0 +1,20 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias (si algún día usas Node)
+node_modules/
+
+# Archivos de editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Archivos comprimidos
+*.zip
+*.tar.gz
+
+# Logs
+*.log
